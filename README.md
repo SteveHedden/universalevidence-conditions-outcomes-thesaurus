@@ -1,4 +1,4 @@
-# Universal Evidence States and Indicators Thesaurus
+# Universal Evidence Conditions and Outcomes Thesaurus
 
 A controlled vocabulary for describing the condition of people and systems, and the indicators used to measure those conditions. Developed by Steve Hedden as part of [Universal Evidence](https://universalevidence.com).
 
@@ -8,6 +8,8 @@ Version **0.2.0**. Counts below describe the 8 September 2026 snapshot.
 
 - `states.ttl`: 6,297 States and 819 Indicators.
 - `subjects.ttl`: 14 bearer types, such as Population and Health System.
+
+The public name uses “conditions and outcomes” to distinguish these concepts from geographic states. The technical `ue:State` class and existing concept IRIs remain unchanged. Indicators are included as the measures used to assess conditions and outcomes.
 
 A State can be a condition topic or an outcome topic in a study. An Indicator is a metric linked to a State through `ue:measures` or inverse `ue:measuredBy`; it is outside the State hierarchy. Subjects identify who or what bears a State. An indicator may apply to multiple States when its interpretation supports each link; this does not imply a diagnosis.
 
